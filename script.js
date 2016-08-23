@@ -21,28 +21,28 @@ alert('Помилка. Введіть ціле число');
 }
 console.log(pow(x, n));
                                           /*TASK 2*/
-/*var arrName = [];
+var arrName = [];
 var userName;
 
 for (var i = 0; i < 5; i++) {
-    var userName = prompt('Enter any name:','');
+    var userName = prompt('Enter ANY name:','');
     arrName.push(userName);
     }
 
-var login = prompt('Enter your name:','');
+var login = prompt('Enter YOUR name:','');
+
+var message = 'Error. Your login is not good';
 
 function authorization(uName, fName) {
     var lengthArr = fName.length;
 
     for (var i = 0; i < lengthArr; i++) {
+        
         if (uName == fName[i]) {
-            alert(login + ", ви успішно ввійшли");
-            break;
-        } else {
-              alert("Помилка. Введений логін невірний")
-              break;
-        }
+          message = "Welcome, mr. " + fName[i];
+        }        
     }
+    alert(message);         
 }
 
-authorization(login, arrName);*/
+authorization(login, arrName);
