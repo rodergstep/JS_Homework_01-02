@@ -39,10 +39,10 @@ function authorization(uName, fName) {
     for (var i = 0; i < lengthArr; i++) {
         
         if (uName == fName[i]) {
-          message = "Welcome, mr. " + fName[i];
+         return message = "Welcome, mr. " + fName[i];
         }        
     }
-    alert(message);         
+    return alert(message);         
 }
 
 authorization(login, arrName);
